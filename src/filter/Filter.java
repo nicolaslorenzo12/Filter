@@ -3,21 +3,21 @@ import java.util.ArrayList;
 
 public class Filter {
 
-    ArrayList<Object> item = new ArrayList<Object>();
-    Object bike = new Object("Bike", 100);
-    Object phone = new Object("Phone", 200);
-    Object pencil = new Object("Pencil", 25);
-    Object bag = new Object("Bag", 80);
-    Object table = new Object("Table", 150);
-    Object plate = new Object("Plate", 90);
+    ArrayList<Thing> items = new ArrayList<Thing>();
+    Thing bike = new Thing("Bike", 100);
+    Thing phone = new Thing("Phone", 200);
+    Thing pencil = new Thing("Pencil", 25);
+    Thing bag = new Thing("Bag", 80);
+    Thing table = new Thing("Table", 150);
+    Thing plate = new Thing("Plate", 90);
 
     public Filter(){
-        item.add(bike);
-        item.add(phone);
-        item.add(pencil);
-        item.add(bag);
-        item.add(table);
-        item.add(plate);
+        items.add(bike);
+        items.add(phone);
+        items.add(pencil);
+        items.add(bag);
+        items.add(table);
+        items.add(plate);
     }
 
     public static void main(String[] args) {
@@ -31,10 +31,10 @@ public class Filter {
 
         System.out.print("[");
 
-        for(int x = 0; x < item.size(); x++) {
+        for(int x = 0; x < items.size(); x++) {
 
-            if (item.get(x).getPrice() < 100) {
-                System.out.print("(" + item.get(x).getName() + ")");
+            if (items.get(x).getPrice() < 100) {
+                System.out.print("(" + items.get(x).getName() + ")");
             }
         }
 

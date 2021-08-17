@@ -1,11 +1,11 @@
 package filter;
 
-public class Object {
+public class Thing {
 
     private String name;
     private int price;
 
-    public Object(String name, int price){
+    public Thing(String name, int price){
         this.name = name;
         this.price = price;
     }
